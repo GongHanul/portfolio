@@ -1,0 +1,17 @@
+.carousel-item img{
+  /* 반응형 웹 : 디스플레이의 종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법 */
+  /* viewport 이용해서 반응형 웹 구현 */
+  /* vh : viewport height 보이는 화면을 꽉 채워라*/
+  /* vw : viewport width */
+  height: 100vh;
+}
+
+nav{
+  z-index: 1;
+  /* width: 100%; */
+}
+
+
+
+
+

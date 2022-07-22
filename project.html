@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>공한울 포트폴리오</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-dark navbar-dark px-5 position-fixed w-100">
+        <!-- class를 position-fixed로 하면 이미지 뒤에 부착되어 보이지 않는다. -->
+          <a class="navbar-brand" href="#">공한울</a>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#main-part">Main</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-part">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#language-part">Skill</a>
+            </li>
+            <li class="nav-item">
+              <!-- nav-link disabled일 때 버튼 선택이 안된다. -->
+              <a class="nav-link" href="#stack-part">Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#to-be-part">Closing</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- id 사용 지양하는 이유 : BEM css 방법론 때문 -->
+      <!-- 최대한 id 사용을 줄이고 class 사용을 권장 -->
+      <section id="main-part" class="pt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- d-block : display block. inline은 지정된 크기만 출력하는데 이를 block화 하여 한 줄을 꽉 채운다 -->
+              <!-- w-100 : width 100 -->
+              <img src="./images/main1.jpg" class="d-block w-100" alt="은하 이미지">
+              <div class="carousel-caption h-50">
+                <!-- h1 : 구글 검색 엔진에 감점된다. 하나만 줄여서 -->
+                <h2>공한울 포트폴리오
+                  <p>싸피 8기 임베디드반</p>
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/main2.jpg" class="d-block w-100" alt="카메라와 사진 이미지">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/main3.jpg" class="d-block w-100" alt="런던 빅 벤 이미지">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="about-part" class="pt-5" style="min-height: 100vh;">
+        <!-- text-center : 부모 클래스 내부의 자식 클래스를 정렬한다 -->
+        <div class="bg-primary h2 text-white text-center p-4">About</div>
+        <!-- mx-auto = margin 0 : 좌우 auto, 상하 no, 가운데 위치시키는 방법 -->
+        <!-- mt : margin-top -->
+        <div class="card mx-auto mt-4" style="width: 18rem;">
+          <img src="./images/profile.png" class="card-img-top w-75 mx-auto" alt="공한울 프로필사진">
+          <div class="card-body text-center">
+            <h5 class="card-title">공한울</h5>
+            <p class="card-text">SSAFY 8기 임베디드반</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="mt-5 text-center">
+          안녕하세요, 싸피 8기 임베디드반 공한울 입니다.
+          <p>멀캠까지 통학 왕복으로 3시간 넘게 걸립니다.</p>
+        </div>
+        <ul class="list-group w-50 mx-auto">
+          <li class="list-group-item"> <i class="bi bi-wind"></i><span>010-1234-5678</span> </li>
+          <li class="list-group-item"> <span>abcdefg@hijk.lmnop</span> </li>
+          <li class="list-group-item"> <span>서울특별시 강남구 테헤란로</span> </li>
+          <li class="list-group-item"> <span>코딩코딩개발개발</span> </li>
+        </ul>
+      </section>
+      <section id="language-part" class="pt-5" style="min-height: 100vh;">
+        <div class="bg-primary h2 text-white text-center p-4">Language Skill</div>
+        <ul class="mx-auto w-50 mt-5">
+          <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">C</div>
+            <div class="progress w-50">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="w-25 text-center">70%</div>
+          </li>
+          <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">C++</div>
+            <div class="progress w-50">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="w-25 text-center">70%</div>
+          </li>
+          <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">JAVA</div>
+            <div class="progress w-50">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 10%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="w-25 text-center">10%</div>
+          </li>
+          <li class="list-group-item d-flex align-items-center p-4">
+            <div class="w-25">Python</div>
+            <div class="progress w-50">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="w-25 text-center">90%</div>
+
+          </li>
+        </ul>
+
+      </section>
+      <section id="stack-part" class="pt-5" style="height: 100%;">
+        <div class="bg-primary h2 text-white text-center p-4">Skill Stack</div>
+        <table class="table w-75 mt-5 mx-auto">
+          <thead>
+            <tr>
+              <th scope="col">분야</th>
+              <th scope="col">분류</th>
+              <th scope="col">스택</th>
+              <th scope="col">Level</th>
+              <th scope="col">근거</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="10" class="align-middle">WEB</th>
+              <!-- win key+. : 이모지 -->
+              <td rowspan="4" class="align-middle">Frontend</td>
+              <td>HTML/CSS</td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>웹페이지 클론코딩 가능</td>
+            </tr>
+            <tr>
+              <td>Bootstrap</td>
+              <td>⭐⭐⭐</td>
+              <td>Bootstrap5 기준 Document 참고하여 개발 가능</td>
+            </tr>
+            <tr>
+              <td>Vue.js</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>다양한 Web Project 개발 진행</td>
+            </tr>
+            <tr>
+              <td>React.js</td>
+              <td>학습예정</td>
+              <td>다양한 Web Project 개발 진행</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="align-middle">Backend</td>
+              <td>Node.js</td>
+              <td>⭐⭐⭐⭐</td>
+              <td>비동기 통신/REST/WEB</td>
+            </tr>
+            <tr>
+              <td>MySQL</td>
+              <td>⭐⭐⭐</td>
+              <td>활용에 능숙, DB 성능 개선작업 불가</td>
+            </tr>
+            <tr>
+              <td>MongoDB</td>
+              <td>⭐⭐</td>
+              <td>Mongo DB Node.js + Mongo.DB 프로젝트 경험</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="align-middle">DevOps</td>
+              <td>AWS</td>
+              <td>⭐⭐⭐</td>
+              <td>EC2 활용하기</td>
+            </tr>
+            <tr>
+              <td>Nginx</td>
+              <td>⭐⭐</td>
+              <td>웹서버 운영</td>
+            </tr>
+            <tr>
+              <td>Jenkins</td>
+              <td>⭐</td>
+              <td>배포서버 운영</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="to-be-part" class="mt-5 pt-5" style="min-height: 100vh;">
+        <div class="bg-primary h2 text-white text-center p-4">Closing</div>
+
+        <div class="card text-center mt-5 mb-3">
+          <img src="./images/closing.jpg" class="card-img-top w-50 mx-auto mt-5" alt="마무리 이미지">
+          <div class="card-body">
+            <h5 class="card-title">공한울 포트폴리오 마무리</h5>
+            <p class="card-text">여기까지 입니다</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis neque ducimus ex voluptate beatae possimus? Ex, corporis vitae. Optio explicabo accusamus et deserunt inventore maiores fuga quam dicta nemo voluptate.</p>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3">
+      &copy; 2022 공한울
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
